@@ -1,0 +1,145 @@
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter the number of rows for the card
+Enter the number of columns for the card
+The bingo card size is set to 2 rows X 3 columns
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 6 numbers for your card (separated by ' ')
+Try again: you entered 3 numbers instead of 6
+Enter 6 numbers for your card (separated by ' ')
+You entered
+4, 6, 8, 2, 3, 5
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 6 numbers for your card (separated by ' ')
+You entered
+4, 2, 3, 10, 6, 9
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 6 numbers for your card (separated by ' ')
+You entered
+2, 6, 5, 23, 18, 1
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Card  0 numbers:
+ 4  6  8
+ 2  3  5
+Card  1 numbers:
+ 4  2  3
+10  6  9
+Card  2 numbers:
+ 2  6  5
+23 18  1
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Eyes down, look in!
+Enter the next number
+Checking card 0 for 2
+Marked off 2
+Checking card 1 for 2
+Marked off 2
+Checking card 2 for 2
+Marked off 2
+Enter the next number
+Checking card 0 for 6
+Marked off 6
+Checking card 1 for 6
+Marked off 6
+Checking card 2 for 6
+Marked off 6
+Enter the next number
+Checking card 0 for 5
+Marked off 5
+Checking card 1 for 5
+Number 5 not on this card
+Checking card 2 for 5
+Marked off 5
+Enter the next number
+Checking card 0 for 18
+Number 18 not on this card
+Checking card 1 for 18
+Number 18 not on this card
+Checking card 2 for 18
+Marked off 18
+Enter the next number
+Checking card 0 for 4
+Marked off 4
+Checking card 1 for 4
+Marked off 4
+Checking card 2 for 4
+Number 4 not on this card
+Enter the next number
+Checking card 0 for 1
+Number 1 not on this card
+Checking card 1 for 1
+Number 1 not on this card
+Checking card 2 for 1
+Marked off 1
+Enter the next number
+Checking card 0 for 9
+Number 9 not on this card
+Checking card 1 for 9
+Marked off 9
+Checking card 2 for 9
+Number 9 not on this card
+Enter the next number
+Checking card 0 for 10
+Number 10 not on this card
+Checking card 1 for 10
+Marked off 10
+Checking card 2 for 10
+Number 10 not on this card
+Enter the next number
+Checking card 0 for 5
+Marked off 5
+Checking card 1 for 5
+Number 5 not on this card
+Checking card 2 for 5
+Marked off 5
+Enter the next number
+Checking card 0 for 23
+Number 23 not on this card
+Checking card 1 for 23
+Number 23 not on this card
+Checking card 2 for 23
+Marked off 23
+And the winner is card 2
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Thank you for playing

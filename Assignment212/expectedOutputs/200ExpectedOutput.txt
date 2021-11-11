@@ -1,0 +1,47 @@
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter the new separator
+Separator is ','
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter the number of rows for the card
+Enter the number of columns for the card
+The bingo card size is set to 2 rows X 3 columns
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 6 numbers for your card (separated by ',')
+You entered
+11, 12, 13, 14, 15, 16
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Card  0 numbers:
+11,12,13
+14,15,16
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Thank you for playing
