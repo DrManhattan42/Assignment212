@@ -1,0 +1,181 @@
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter the number of rows for the card
+Enter the number of columns for the card
+The bingo card size is set to 2 rows X 2 columns
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 4 numbers for your card (separated by ' ')
+You entered
+1, 3, 5, 7
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 4 numbers for your card (separated by ' ')
+You entered
+3, 5, 7, 9
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 4 numbers for your card (separated by ' ')
+You entered
+7, 9, 11, 13
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 4 numbers for your card (separated by ' ')
+You entered
+11, 13, 15, 17
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 4 numbers for your card (separated by ' ')
+You entered
+13, 15, 17, 1
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 4 numbers for your card (separated by ' ')
+You entered
+15, 17, 19, 21
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 4 numbers for your card (separated by ' ')
+You entered
+4, 8, 12, 16
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 4 numbers for your card (separated by ' ')
+You entered
+5, 9, 13, 17
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 4 numbers for your card (separated by ' ')
+You entered
+6, 10, 14, 18
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 4 numbers for your card (separated by ' ')
+You entered
+10, 20, 30, 40
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 4 numbers for your card (separated by ' ')
+You entered
+22, 24, 26, 28
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Enter 4 numbers for your card (separated by ' ')
+You entered
+45, 67, 34, 78
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Card  0 numbers:
+ 1  3
+ 5  7
+Card  1 numbers:
+ 3  5
+ 7  9
+Card  2 numbers:
+ 7  9
+11 13
+Card  3 numbers:
+11 13
+15 17
+Card  4 numbers:
+13 15
+17  1
+Card  5 numbers:
+15 17
+19 21
+Card  6 numbers:
+ 4  8
+12 16
+Card  7 numbers:
+ 5  9
+13 17
+Card  8 numbers:
+ 6 10
+14 18
+Card  9 numbers:
+10 20
+30 40
+Card 10 numbers:
+22 24
+26 28
+Card 11 numbers:
+45 67
+34 78
+ 0: Exit
+ 1: Play bingo
+ 2: Set number separator
+ 3: Create a bingo card
+ 4: List existing cards
+ 5: Set bingo card size
+
+Thank you for playing
