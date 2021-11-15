@@ -16,6 +16,10 @@ public class BingoCard {
   private int numberOfColumns;
 
   public BingoCard(int numberOfRows, int numberOfColumns) {
+
+    //System.out.println(numberOfRows + "  " +  numberOfColumns);
+
+
     setNumberOfRows(numberOfRows);
     setNumberOfColumns(numberOfColumns);
 
@@ -31,7 +35,7 @@ public class BingoCard {
      */
 
     for(int i =0; i<markedOff.length; i++){
-      for(int j = 0; j<markedOff.length; j++){
+      for(int j = 0; j<markedOff[0].length; j++){
         markedOff [i][j] = false;
       }
     }
@@ -115,6 +119,8 @@ public class BingoCard {
     int[] numbersList =
         Arrays.stream(numbersAsStrings).mapToInt(Integer::parseInt).toArray();
 
+
+
     /* TODO
           the goal of this method is to get the numbers entered into the [][] numbers format
      */
@@ -122,6 +128,7 @@ public class BingoCard {
   }
 
   public void markNumber(int number) {
+
     /* TODO
           make use of the [][] markedOff to mark off numbers from [][] numbers as they match
           if not matching an appropriate message must be printed, verify against expected output files
