@@ -17,9 +17,6 @@ public class BingoCard {
 
   public BingoCard(int numberOfRows, int numberOfColumns) {
 
-    //System.out.println(numberOfRows + "  " +  numberOfColumns);
-
-
     setNumberOfRows(numberOfRows);
     setNumberOfColumns(numberOfColumns);
 
@@ -78,35 +75,24 @@ public class BingoCard {
      */
     StringBuilder sb = new StringBuilder();
 
-    for(int i =0; i<numberOfRows; i++){
-      for(int j=0; j<numberOfColumns; j++){
-        sb.append(numbers[i] + " ");
-      }
-    }
-
 
     /* TODO
           all the cards are stored as a grid ([][] numbers) of rows / columns, so for example, numbers 3 4 5 6 will be
           printed as follows:
           3  4
           5  6
-     */
-
-
-    for(int i =0; i<numberOfRows; i++){
-      for(int j=0; j<numberOfColumns; j++){
-        System.out.println(numbers[i][j] + " ");;
-      }
-      System.out.println(" ");
-    }
-
-
-    /* TODO
           return the grid as a string
      */
 
-    //*************************************************
 
+     for(int i =0; i<Defaults.DEFAULT_NUMBER_OF_ROWS; i++){
+      for(int j=0; j<Defaults.DEFAULT_NUMBER_OF_COLUMNS; j++){
+        sb.append(numbers[i][j] + " ");
+        //System.out.println("QQQ " + String.valueOf(numbers[i][j]));
+      }
+     sb.append("\n");
+    }
+    //System.out.println("ZZ " + sb.toString());
     return sb.toString();
   }
 
@@ -116,14 +102,21 @@ public class BingoCard {
           set the grid from this list
      */
 
-    int[] numbersList =
-        Arrays.stream(numbersAsStrings).mapToInt(Integer::parseInt).toArray();
+    int[] numbersList = Arrays.stream(numbersAsStrings).mapToInt(Integer::parseInt).toArray();
 
-
-
-    /* TODO
+     /* TODO
           the goal of this method is to get the numbers entered into the [][] numbers format
      */
+    int j=0;
+    int row=0;
+    for(int i =0; i < numbersList.length; i++) {
+      numbers[row][j] = numbersList[i];
+       System.out.println("XXYY " + numbers [row][j]);
+      if(((j + 1) % Defaults.DEFAULT_NUMBER_OF_ROWS) == 0) {
+        j=0; row++;
+      }
+
+  }
 
   }
 

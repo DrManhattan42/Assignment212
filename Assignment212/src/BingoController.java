@@ -106,100 +106,73 @@ public class BingoController {
         /* TODO
               calculate how many numbers are required to be entered based on the number or rows / columns
          */
+
         int numbersRequired = 0;
+        int numbersLen = Defaults.DEFAULT_NUMBER_OF_ROWS * Defaults.DEFAULT_NUMBER_OF_COLUMNS;
+        String[] numbers = new String[numbersLen];
 
-        String[] numbers =
-            new String[Defaults.DEFAULT_NUMBER_OF_ROWS * Defaults.DEFAULT_NUMBER_OF_COLUMNS];
+        numbers = Toolkit.getInputForMessage(
+                             String.format(
+                                 "Enter " + numbers.length +   " numbers " +
+                                 "for your " +
+                                 "card " +
+                                 "(separated by " +
+                                 "' ')",
+                                 numbersRequired,
+                                 Defaults.getNumberSeparator()))
+                         .trim()
+                         .split(Defaults.getNumberSeparator());
 
-        boolean correctAmountOfNumbersEntered;
-        boolean found = false;
-        do {
-            numbers = Toolkit.getInputForMessage(
-                            String.format(
-                                    "Enter " + numbers.length +   " numbers " +
-                                    "for your " +
-                                                         "card " +
-                                    "(separated by " +
-                                            "' ')",
-                                    numbersRequired,
-                                    Defaults.getNumberSeparator()))
-                    .trim()
-                    .split(Defaults.getNumberSeparator());
         /* TODO
               verify if the correctAmountOfNumbersEntered is true or false dependant on the numbersRequired calculation
-         */
-            int currentCols = getCurrentColumnSize();
-            int currentRows = getCurrentRowSize();
-            if  (currentCols * currentRows == numbers.length){
-                correctAmountOfNumbersEntered = true;
-            } else {
-                correctAmountOfNumbersEntered = false;
-            }
 
             //changes according to calculation inserted here
 
+
         /* TODO
-              verify whether the numbers entered is not correct by printing an appropriate message
-              verify against the expected output files
-
+         	verify if the correctAmountOfNumbersEntered is true or false dependant on the numbersRequired calculation
+        	verify whether the numbers entered is not correct by printing an appropriate message
+        	verify against the expected output files
          */
-            //insert code here
 
+        if(numbersLen == numbers.length){
+            boolean found = false;
             for(int i=0; i<numbers.length; i++){
-                for (int j=1; j<numbers.length-1; j++){
+                for (int j=i+1; j<numbers.length; j++){
                     if (numbers[i] == numbers[j]){
                         found = true;
-                        break;
                     }
+                    if(found) { break;}
                 }
+                if(found) { break;}
             }
 
+            if (found == true){
+                Toolkit.printArray(numbers);
+                System.out.println("You have repeated the same number more than once\n");
+                /* TODO  print an appropriate message using ToolKit.printArray() to show the numbers entered */
+                System.out.println(Toolkit.printArray(numbers));
 
-        } while (!correctAmountOfNumbersEntered);
 
-        if (found == true){
-            Toolkit.printArray(numbers);
-            System.out.println("You have repeated the same number more than once");
+            }else {
+                /* TODO create new BingoCard*/
+                int col = Defaults.DEFAULT_NUMBER_OF_COLUMNS;
+                int row = Defaults.DEFAULT_NUMBER_OF_ROWS;
+                BingoCard card = new BingoCard(row, col);
+                /* TODO setCardNumbers for the new card */
+                card.setCardNumbers(numbers);
+                /* TODO add the card to the ArrayList */
+                bingoCards.add(card);
+            }
+        } else {
+            System.out.println("You have entered wrong amount of numbers. " +
+                               "Required ["+numbersLen+"] nummbers only\n");
         }
 
-        /* TODO
-              print an appropriate message using ToolKit.printArray() to show the numbers entered
-         */
+        //changes according to calculation inserted here
 
 
-        //insert code here
 
-
-        /* TODO
-              create new BingoCard
-        */
-
-        int call = Defaults.DEFAULT_NUMBER_OF_COLUMNS;
-        int row = Defaults.DEFAULT_NUMBER_OF_ROWS;
-        BingoCard card = new BingoCard(row, call);
-
-
-       //insert code here
-        /* TODO
-              setCardNumbers for the new card
-         */
-        //insert code here
-
-        numbers = new String[row * call];
-
-        for(int i=0; i<numbers.length; i++){
-            numbers[i] =  Toolkit.getInputForMessage("Please enter " +
-                                                            "your " + (i+1) +
-                                                            " bingo number");
-        }
-
-
-        /* TODO
-              add the card to the ArrayList
-         */
-        //insert code here
-
-        bingoCards.add(card);
 
     }
 
@@ -219,18 +192,9 @@ public class BingoController {
         int i = 1;
         for(BingoCard myCard: bingoCards){
             System.out.println("Card " + (i));
-            int rows = myCard.getNumberOfColumns();
-            int cols = myCard.getNumberOfRows();
-            String []numbers = myCard.getCardNumbers().split(" ");
-
-            for (int j=0; j<numbers.length; j++){
-                System.out.println(numbers[j] + " ");
-                if ((j+1)%cols == 0){
-                    System.out.println(" ");
-                }
-            }
-
-        }
+            String cardNumbers = myCard.getCardNumbers();
+           // System.out.println(cardNumbers);
+       }
 
 
         /* TODO
@@ -349,7 +313,19 @@ public class BingoController {
                   BingoCard bingoCard = new BingoCard(rows, cols);
                     break;
                 case 3: break;
-                case 4: createCard(); break;
+                case 4:
+                    int n = Integer.valueOf(Toolkit.getInputForMessage("Please enter " +
+                                                             "the " +
+                                                       "number of cards you " +
+                                                       "want to create"));
+                    for(int i = 0; i<n; i++){
+                        createCard();
+                    }
+                    break;
+                case 5:
+
+                    listCards();
+                    break;
 
             }
             if(choice == 1){
