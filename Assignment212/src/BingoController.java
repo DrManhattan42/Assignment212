@@ -38,7 +38,7 @@ public class BingoController {
 
     ArrayList <BingoCard> bingoCards = new ArrayList<BingoCard>();
 
-   //implement code here
+    //implement code here
 
     /* TODO
           implement getters and setters for currentRowSize / currentColumnSize
@@ -53,7 +53,6 @@ public class BingoController {
     public void setCurrentRowSize(int currentRowSize) {
        /* TODO
              implement code here
-
      */
         currentRowSize = currentRowSize;
     }
@@ -88,12 +87,12 @@ public class BingoController {
 
     public void setSize() {
         setCurrentRowSize(parseInt(Toolkit.getInputForMessage(
-                "")));
+            "")));
         setCurrentColumnSize(parseInt(Toolkit.getInputForMessage(
-                "")));
+            "")));
         System.out.printf("The bingo card size is set to %d rows X %d columns%n",
-                getCurrentRowSize(),
-                getCurrentColumnSize());
+                          getCurrentRowSize(),
+                          getCurrentColumnSize());
     }
 
     /* TODO
@@ -125,10 +124,7 @@ public class BingoController {
 
         /* TODO
               verify if the correctAmountOfNumbersEntered is true or false dependant on the numbersRequired calculation
-
             //changes according to calculation inserted here
-
-
         /* TODO
          	verify if the correctAmountOfNumbersEntered is true or false dependant on the numbersRequired calculation
         	verify whether the numbers entered is not correct by printing an appropriate message
@@ -189,12 +185,12 @@ public class BingoController {
 
     public void listCards() {
 
-        int i = 1;
+        int i = 0;
         for(BingoCard myCard: bingoCards){
-            System.out.println("Card " + (i));
+            System.out.println("Card " + (++i));
             String cardNumbers = myCard.getCardNumbers();
-           // System.out.println(cardNumbers);
-       }
+            System.out.println(cardNumbers);
+        }
 
 
         /* TODO
@@ -203,7 +199,7 @@ public class BingoController {
         /* TODO
               call printCardAsGrid() method here, Hint: use getCardNumbers() when getting cards
          */
-        }
+    }
 
 
     /* TODO
@@ -242,10 +238,10 @@ public class BingoController {
         //insert code here
     }
 
-   /* TODO
-         make use of isWinner() to determine who the winner is
-         the method should return the index of who the winner is
-    */
+    /* TODO
+          make use of isWinner() to determine who the winner is
+          the method should return the index of who the winner is
+     */
     public int getWinnerId() {
         //insert code here
         return 0;
@@ -261,8 +257,8 @@ public class BingoController {
         boolean weHaveAWinner;
         do {
             markNumbers(parseInt(
-                    Toolkit.getInputForMessage("Enter the next number")
-                            .trim()));
+                Toolkit.getInputForMessage("Enter the next number")
+                       .trim()));
 
             int winnerID = getWinnerId();
             weHaveAWinner = winnerID != Defaults.NO_WINNER;
@@ -310,14 +306,14 @@ public class BingoController {
                         Integer.valueOf(Toolkit.getInputForMessage("Enter " +
                                                                    "row " +
                                                                    "numbers"));
-                  BingoCard bingoCard = new BingoCard(rows, cols);
+                    BingoCard bingoCard = new BingoCard(rows, cols);
                     break;
                 case 3: break;
                 case 4:
                     int n = Integer.valueOf(Toolkit.getInputForMessage("Please enter " +
-                                                             "the " +
-                                                       "number of cards you " +
-                                                       "want to create"));
+                                                                       "the " +
+                                                                       "number of cards you " +
+                                                                       "want to create"));
                     for(int i = 0; i<n; i++){
                         createCard();
                     }

@@ -5,7 +5,6 @@ public class BingoCard {
     The two arrays are private and their structure is NEVER exposed to another
     class, which is why the getCardNumbers returns a String that needs
     further processing.
-
     While this is not computationally efficient, it is good programming
     practice to hide data structures (information hiding).
    */
@@ -38,9 +37,9 @@ public class BingoCard {
     }
 
   }
-     /* TODO
-           implement the getters and setters for rows / columns as seen below
-     */
+  /* TODO
+        implement the getters and setters for rows / columns as seen below
+  */
   public int getNumberOfRows() {
     /* TODO
           change the return from 0 to the appropriate return
@@ -50,7 +49,7 @@ public class BingoCard {
 
   public void setNumberOfRows(int numberOfRows) {
 
-    numberOfRows = numberOfRows;
+    this.numberOfRows = numberOfRows;
 
   }
 
@@ -65,7 +64,7 @@ public class BingoCard {
     /* TODO
           implement code here
      */
-    numberOfColumns = numberOfColumns;
+    this.numberOfColumns = numberOfColumns;
   }
 
   public String getCardNumbers() {
@@ -84,15 +83,12 @@ public class BingoCard {
           return the grid as a string
      */
 
-
-     for(int i =0; i<Defaults.DEFAULT_NUMBER_OF_ROWS; i++){
-      for(int j=0; j<Defaults.DEFAULT_NUMBER_OF_COLUMNS; j++){
+    for(int i =0; i<this.numbers.length; i++){
+      for(int j=0; j<(this.numbers[i]).length; j++){
         sb.append(numbers[i][j] + " ");
-        //System.out.println("QQQ " + String.valueOf(numbers[i][j]));
       }
-     sb.append("\n");
+      sb.append("\n");
     }
-    //System.out.println("ZZ " + sb.toString());
     return sb.toString();
   }
 
@@ -107,17 +103,16 @@ public class BingoCard {
      /* TODO
           the goal of this method is to get the numbers entered into the [][] numbers format
      */
-    int j=0;
-    int row=0;
+
+    int _row=0;
+    int _col=0;
     for(int i =0; i < numbersList.length; i++) {
-      numbers[row][j] = numbersList[i];
-       System.out.println("XXYY " + numbers [row][j]);
-      if(((j + 1) % Defaults.DEFAULT_NUMBER_OF_ROWS) == 0) {
-        j=0; row++;
+      if(_col  == Defaults.DEFAULT_NUMBER_OF_COLUMNS) {
+        _row++; _col=0;
       }
-
-  }
-
+      numbers[_row][_col] = numbersList[i];
+      _col++;
+    }
   }
 
   public void markNumber(int number) {
